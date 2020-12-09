@@ -11,14 +11,12 @@ public class NewGachapon {
 
 		String tirar = "";
 
-		int tiradas = Integer.parseInt(JOptionPane.showInputDialog("¿How many trys do you want to do, 1 or 10?"));
+		int tiradas = Integer.parseInt(JOptionPane.showInputDialog("Â¿How many trys do you want to do, 1 or 10?"));
 
 		if (tiradas == 1) {
 			do {
 
 				int roll = Gachapon.getFirtsRoll();
-
-				// System.out.println(roll);
 
 				if (roll >= 47) {
 					System.out.println(Banners.setGachapon()[Gachapon.getShitRoll()]);
@@ -57,7 +55,7 @@ public class NewGachapon {
 					++contadorS;
 				}
 
-				tirar = JOptionPane.showInputDialog("¿Do you want to try again?");
+				tirar = JOptionPane.showInputDialog("Â¿Do you want to try again?");
 
 			} while (tirar.equalsIgnoreCase("Yes"));
 		}
@@ -80,7 +78,7 @@ public class NewGachapon {
 
 					{
 
-						System.out.println(Banners.setGachapon()[Gachapon.getOpRoll()]);
+						System.out.println(Banners.setGachapon()[Gachapon.getMediumRoll()]);
 						contadorS1 = 0;
 						++contadorS;
 					}
@@ -89,7 +87,7 @@ public class NewGachapon {
 
 					{
 
-						System.out.println(Banners.setGachapon()[Gachapon.getMediumRoll()]);
+						System.out.println(Banners.setGachapon()[Gachapon.getOpRoll()]);
 						contadorS = 0;
 						++contadorS1;
 					}
@@ -109,7 +107,7 @@ public class NewGachapon {
 					}
 				}
 
-				tirar = JOptionPane.showInputDialog("¿Do you want to try again?");
+				tirar = JOptionPane.showInputDialog("Â¿Do you want to try again?");
 
 			} while (tirar.equalsIgnoreCase("Yes"));
 		}
