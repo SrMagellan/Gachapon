@@ -6,6 +6,7 @@ public class NewGachapon {
 
 	public static void main(String[] args) {
 
+		int primoGems = 160;
 		int contadorS1 = 0;
 		int contadorS = 0;
 
@@ -15,6 +16,8 @@ public class NewGachapon {
 
 		if (tiradas == 1) {
 			do {
+				
+				primoGems += 160;
 
 				int roll = Gachapon.getFirtsRoll();
 
@@ -65,6 +68,8 @@ public class NewGachapon {
 				for (int i = 0; i < 9; i++)
 
 				{
+					
+					primoGems += 160;
 
 					int roll = Gachapon.getFirtsRoll();
 
@@ -111,5 +116,7 @@ public class NewGachapon {
 
 			} while (tirar.equalsIgnoreCase("Yes"));
 		}
+		
+		System.out.println("You have spent " + primoGems + " primogems. Back when you want, looser.");
 	}
 }
