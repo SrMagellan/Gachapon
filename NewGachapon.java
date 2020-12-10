@@ -117,6 +117,6 @@ public class NewGachapon {
 			} while (tirar.equalsIgnoreCase("Yes"));
 		}
 		
-		System.out.println("You have spent " + primoGems + " primogems. Back when you want, looser.");
+		System.out.println("You have spent " + primoGems + " primogems. Come back when you want, looser.");
 	}
 }
