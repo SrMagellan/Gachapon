@@ -110,6 +110,13 @@ public class NewGachapon {
 						contadorS1 = 0;
 						++contadorS;
 					}
+					
+					if (contadorS1 == 179) {
+
+						System.out.println(Banners.setGachapon()[Gachapon.getSure()]);
+						contadorS1 = 0;
+						++contadorS;
+					}
 				}
 
 				tirar = JOptionPane.showInputDialog("¿Do you want to try again?");
